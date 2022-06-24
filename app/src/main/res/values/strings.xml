@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Homework4</string>
+    <string name="hello">Hello!</string>
+    <string name="let_s_introduce">Let\'s Introduce!</string>
+    <string name="next">Next</string>
+    <string name="username">Username</string>
+    <string name="your_full_name">Your full name</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_password">Create password</string>
+    <string name="repeat_your_password">Repeat your password</string>
+    <string name="create_an_account">Create an account</string>
+</resources>
