@@ -32,5 +32,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
+        binding.tvForgotPassword.setOnClickListener {
+            this.makeToast("Try to remember :)")
+        }
     }
 }

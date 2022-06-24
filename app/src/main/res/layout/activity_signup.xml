@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -53,10 +54,10 @@
             android:tint="@color/yellow" />
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFullName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/background"
-            android:id="@+id/etFullName"
             android:fontFamily="sans-serif-light"
             android:hint="@string/your_full_name"
             android:maxLines="1"
@@ -82,12 +83,12 @@
             android:tint="@color/yellow" />
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/background"
             android:fontFamily="sans-serif-light"
             android:hint="@string/username"
-            android:id="@+id/etUsername"
             android:maxLines="1"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
@@ -102,40 +103,35 @@
         android:layout_marginTop="30dp">
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBack"
             android:layout_width="58dp"
             android:layout_height="58dp"
             android:background="@drawable/rectangle"
             android:backgroundTint="@color/cyan_dark"
-            android:padding="15dp"
-            android:id="@+id/btnBack"
             android:src="@drawable/ic_arrow_left"
+            android:padding="15dp"
             android:tint="@color/cyan" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/rectangle"
-            android:id="@+id/btnNext"
             android:gravity="center">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:drawablePadding="10dp"
                 android:text="@string/next"
                 android:textColor="@color/white"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:src="@drawable/ic_arrow_right"
-                android:tint="@color/white" />
-
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:drawableTint="@color/white" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
