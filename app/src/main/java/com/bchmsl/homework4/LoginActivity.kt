@@ -22,7 +22,12 @@ class LoginActivity : AppCompatActivity() {
     private fun listeners() {
         binding.btnSignIn.setOnClickListener {
             if (checkFields(binding.etUsername, binding.etPassword)) {
-                this.makeToast("Signed in by ${binding.etUsername.text}")
+
+                val intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra("name", binding.etUsername.text.toString())
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+
             }else{
                 this.makeToast("Check fields and try again!")
             }

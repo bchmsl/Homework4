@@ -1,5 +1,6 @@
 package com.bchmsl.homework4
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -28,7 +29,10 @@ class SignupPasswordActivity : AppCompatActivity() {
         binding.btnNext.setOnClickListener {
             if (!binding.etPassword.text.isNullOrEmpty() && !binding.etRepeatPassword.text.isNullOrEmpty()) {
                 if (binding.etPassword.text.toString() == binding.etRepeatPassword.text.toString()) {
-                    this.makeToast("Sign up successfully!")
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra("name", intent.getStringExtra("name"))
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
                 } else {
                     this.makeToast("Passwords do not match!")
                 }

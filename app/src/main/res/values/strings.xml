@@ -13,4 +13,7 @@
     <string name="create_password">Create password</string>
     <string name="repeat_your_password">Repeat your password</string>
     <string name="create_an_account">Create an account</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="change_username">Change Username</string>
+    <string name="log_out">Log Out</string>
 </resources>
